@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+.container {
+    display: grid;
+    grid-template-columns: 200px 3fr 350px;
+    height: 100vh;
+    gap: 10px;
+}
+.left-section {
+    background-color: #6ba3be;
+    text-align: start;
+    border-radius: 20px;
+}
+.logo {
+    color: white;
+    margin: 10px;
+    margin-bottom: 70px;
+    text-align: center;
+
+}
+.ll {
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+i {
+    margin-right: 20px;
+}
+.ll:hover {
+    background-color: #274d60;
+    border-radius: 10px;
+    height: 30px;
+    padding: 10px;
+    margin-right: 10px;
+}
+.main {
+    background-color: #032f30;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 100px auto 1fr;
+}
+.header {
+    text-align: start;
+    margin: 10px 10px 10px 30px;
+    color: white;
+}
+.function {
+    display: flex;
+    justify-content: end;
+    color: white;
+    margin: 10px;
+}
+.bb {
+    background-color: #0a7075;
+    padding: 30px;
+    font-size: 25px;
+    border-radius: 20px;
+    margin: 30px;
+}
+.status {
+    background-color:  #0a7075;
+    border-radius: 20px;
+    margin: 30px;
+}
+.bar-chart {
+    display: flex;
+    align-items: flex-end;
+    height: 300px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.bar {
+    width: 60px;
+    background-color: #6ba3be;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.bar:hover {
+    background-color: #032f30;
+}
+.right-section {
+    background-color: #6ba3be;
+    border-radius: 20px;
+    text-align: center;
+}
+button {
+    background-color: #6ba3be;
+    color: white;
+    font-size: 20px;
+    border: 1px solid #6ba3be;
+    margin-left: 250px; 
+    margin-top: 10px;
+}
+img {
+    margin-top: 150px;
+    height: 100px;
+    justify-items: center;
+}
+.reminder {
+    text-align: start;
+    margin: 45px;
+}
+.r {
+    font-size: 10px;
+}
+.rr {
+    margin-top: 60px;
+}
+.rr:hover {
+    background-color: #274d60;
+    border-radius: 10px;
+    height: 30px;
+    padding: 10px;
+    margin-right: 10px;
+}
+@media (max-width: 1024px) {
+    .container {
+      grid-template-columns: 150px 2fr 250px; 
+      gap: 5px;
+    }
+  
+    .main {
+      grid-template-rows: 80px auto 1fr;
+    }
+  
+    .left-section {
+      font-size: 12px;
+    }
+  
+    .ll {
+      margin-left: 20px; 
+    }
+  
+    .bb {
+      font-size: 20px; 
+    }
+  
+    .bar {
+      width: 40px; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr; 
+      grid-template-rows: auto auto auto; 
+    }
+  
+    .left-section,
+    .main,
+    .right-section {
+      width: 100%;
+      margin: 0 auto; 
+    }
+  
+    .left-section {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: space-around; 
+      height: auto; 
+      padding: 10px; 
+    }
+  
+    .ll {
+      margin: 10px 0;
+    }
+  
+    .main {
+      padding: 10px;
+    }
+  
+    .bar-chart {
+      height: 200px;
+    }
+  
+    .bar {
+      width: 30px; 
+    }
+  
+    button {
+      margin-left: 0;
+      width: 100%; 
+      font-size: 16px; 
+    }
+  
+    img {
+      margin-top: 50px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto; 
+      gap: 10px;
+    }
+  
+    .left-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .ll {
+      font-size: 10px; 
+      margin: 5px 0;
+    }
+  
+    .main {
+      padding: 5px;
+    }
+  
+    .header {
+      font-size: 18px;
+    }
+  
+    .bb {
+      font-size: 18px;
+      padding: 15px;
+    }
+  
+    .status {
+      margin: 10px;
+    }
+  
+    .bar-chart {
+      height: 150px;
+    }
+  
+    .bar {
+      width: 20px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  
+    img {
+      height: 80px; 
+      margin-top: 20px;
+    }
+  
+    .reminder {
+      margin: 20px;
+    }
+  
+    .rr {
+      font-size: 12px;
+      margin-top: 20px;
+    }
+  }
+  
